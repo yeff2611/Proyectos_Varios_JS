@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+main{
+    width: 95%;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 150;
+    background-image: linear-gradient(135deg, #51ace9 0%, #575cbb 100%);
+    opacity: 0.9;
+}
+.nav__items{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0 20px;
+    display: inline-block;
+    transition: all .5s;
+}
+.nav__items:hover{
+    background-color:rgba(220, 220, 220, 0.568);
+    text-decoration-line: underline;
+    /* color: steelblue; */
+}
+section{    
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.title{
+    font-size: 2.3rem;
+    text-align: center;
+}
+.productos__container{
+    padding-top: 80px;
+    width: 100%;
+}
+.productos-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.productos-container img{
+    width: 30%;
+    margin-bottom: 5px;
+    filter: grayscale(60%);
+    transition: transform .5s;
+    cursor: pointer;    
+
+}
+.productos-container img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.15);
+    border-radius: 3px;
+    z-index: 100;
+}
+.servicios__container{
+    margin-top: 130px;
+}
+.servicios-container{
+    height: 100vh;
+}
+.servicios{
+    /* height: 400px; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+.servicio{
+    width: 30%;
+}
+.servicio img{
+    margin-top: 100px;
+}
+.servicio h3{
+    margin: 20px 0;
+    font-size: 22px;
+}
+.servicio p{
+    line-height: 35px;
+}
+.PorQueTrabajar-container{
+    margin-top: 30px;
+}
+.title-trabaja-con-nosotros{
+    font-size: 25px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+.texto-trabaja-con-nosotros{
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.cards{
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 25px;
+}
+.icon{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.card{
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.158);
+    width: 95%;
+    height: 340px;
+    padding: 25px 0;
+    margin: 0 auto;
+    border-radius: 10px;
+    line-height: 70px;
+}
+.text-card{
+    width: 70%;
+    margin: 0 auto;    
+    text-align: center;
+    line-height: 25px;
+}
+
+.contacto .contacto-texto{
+    text-align: center;
+}
+.contacto-texto .title{
+    margin-bottom: 15px;
+}
+.parrafo-contacto{
+    margin-bottom: 45px;
+    color: #757373bd;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.contacto .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.nombre-contacto, .email-contacto, .mensaje{
+    display: inline-block;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #757373bd;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.mensaje{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+}
+.derecha{
+    display: flex;
+    justify-content: flex-end;
+}
+.boton-envio{
+    padding: 15px 20px;
+    border: 1.5px solid rgb(44, 127, 196);
+    border-radius: 5px;
+    background: none;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.boton-envio:hover{
+    background: rgba(70, 131, 180, 0.425);
+}
+
+footer{
+    width: 100%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    background-image: linear-gradient(135deg, #aec1ce 0%, #e5e5ecfd 100%);
+}
+.footer-icons{
+    width: 20%;
+}
+.footer-icons-lista{
+    display: flex;
+    justify-content: space-between;
+    list-style:none;
+}
+.footer-texto{
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-item-icon a>img{
+    width: 35px;
+}
+.footer-item-icon:hover{
+    background: rgba(125, 182, 204, 0.466) ;
+    opacity: (0.7);
+    border-radius: 10px;
+}
