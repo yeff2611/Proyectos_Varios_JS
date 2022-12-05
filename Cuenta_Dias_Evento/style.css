@@ -11,17 +11,27 @@ body{
     padding: 20px;
     width: 350px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 50px;
+}
+#title-form{
+    text-align: center;
+    margin-top: 0;
 }
 button{
     border: none;
     background: tomato;
+    height: 35px;
+    width: 83px;
     padding: 5px;
     color: white;
     border-radius: 5px;
     font-weight: bolder;
+    letter-spacing: 1.5px;
 }
-
+button:hover{
+    cursor: pointer;
+    filter: brightness(1.35);
+}
 .form input{
     margin: 5px 0;
     padding: 5px;
@@ -37,6 +47,16 @@ input[type="submit"]{
     border-radius: 5px;
     width: 96%;
     box-sizing: content-box;
+    cursor: pointer;
+    font-size: 15px;
+}
+input[type="submit"]:hover{
+    background: tomato;
+    filter: brightness(90%);
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    transition: all .3s;
 }
 
 #eventsContainer{
@@ -44,7 +64,7 @@ input[type="submit"]{
     border-radius: 5px;
     padding: 10px;
     width: 500px;
-    margin: 100px auto;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     gap: 5px;
