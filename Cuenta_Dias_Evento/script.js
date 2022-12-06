@@ -45,7 +45,7 @@ function dateDiff(d){
     const targetDate = new Date(d);
     const today = new Date();
     const difference = targetDate.getTime() - today.getTime();
-    const days = Math.ceil(difference / (1000 * 3600 * 24)); // 100 mls - 3600 seg * 24 hr
+    const days = Math.ceil(difference / (1000 * 3600 * 24)); // 1000 Mls - 3600 seg * 24 hr
     return days;
 }
 
