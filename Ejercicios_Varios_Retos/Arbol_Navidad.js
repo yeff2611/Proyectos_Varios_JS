@@ -45,7 +45,8 @@ export default function createXmasTree(height) {
     }else{
         arbol = "Altura no válida"
     }
-        return arbol
+    
+    return arbol
 }
 let altura = 3
 let arbolXmas = createXmasTree(altura)
